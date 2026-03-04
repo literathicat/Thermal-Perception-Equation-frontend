@@ -1,1 +1,80 @@
 /* pages/myclothes/myclothes.wxss */
+
+/* 品类选项弹窗遮罩层 */
+.category-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* 品类选项容器 */
+.category-options-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 520rpx;
+  width: 90%;
+  z-index: 1000;
+}
+
+/* 背景图片容器 */
+.category-options-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* 背景图片 */
+.category-bg-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 选项框内容区域 */
+.category-options-content {
+  position: relative;
+  z-index: 2;
+  padding: 40rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+  height: 600rpx;
+}
+
+/* 标题 */
+.category-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+/* 品类列表容器 */
+.category-list {
+  flex: 1;
+  height: 400rpx;
+}
+
+/* 品类选项项 */
+.category-item {
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+  color: #666;
+  border-bottom: 1rpx solid #eee;
+  text-align: center;
+}
+
+.category-item:active {
+  background-color: #f0f0f0;
+}
+
+.category-item:last-child {
+  border-bottom: none;
+}
