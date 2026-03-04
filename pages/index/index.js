@@ -1,20 +1,20 @@
 Page({
   data: {
-      userInfo: {
-        avatarUrl: 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0',
-        nickName: '用户昵称'
+    userInfo: {
+      avatarUrl: 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0',
+      nickName: '用户昵称'
     },
     weatherData: {
       location: '北京市',
       temp: '25',
       pm25: '45',
-        uv: '中等',
-        condition: '晴',
-        feels_like: '23',
-        humidity: '65',
-        wind_speed: '3'
-      },
-      iconsTop: [
+      uv: '中等',
+      condition: '晴',
+      feels_like: '23',
+      humidity: '65',
+      wind_speed: '3'
+    },
+    iconsTop: [
       { name: ' ', icon: '/image/首页-我的衣柜按钮.png', url: '../myclothes/myclothes' },
       { name: ' ', icon: '/image/首页-生成穿搭按钮.png', url: '../generateoutfits/generateoutfits' },
       { name: ' ', icon: '/image/首页-知识库按钮.png', url: '../knowledgebase/knowledgebase' },
@@ -22,14 +22,15 @@ Page({
         name: ' ',
         icon: '/image/首页-搜索按钮.png',
         url: '../search/search'
-        }],
-        outfitRecommend: {
-          sign: '22℃微风→休闲牛仔风，幸运色：雾霾蓝',
-          desc: '今日推荐: 轻薄外套搭配T恤，适合当前温度',
-          share_url: '#'
-        }
-        },
-        onLoad() {
+      }
+    ],
+    outfitRecommend: {
+      sign: '22℃微风→休闲牛仔风，幸运色：雾霾蓝',
+      desc: '今日推荐: 轻薄外套搭配T恤，适合当前温度',
+      share_url: '#'
+    }
+  },
+  onLoad() {
             // 使用模拟数据替代API调用
         this.getMockData();
         },

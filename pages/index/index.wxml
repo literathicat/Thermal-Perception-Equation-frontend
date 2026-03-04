@@ -2,50 +2,27 @@
 <view class="container">
   <!-- 背景图片 -->
   <image src="/image/首页-背景.png" class="background" mode="aspectFill"></image>
-  
   <!-- 顶部用户和天气信息 -->
   <view class="header">
-    <view class="user-info">
-      <image src="{{userInfo.avatarUrl}}" mode="aspectFill" class="user-avatar"></image>
-    </view>
-    
-    <view class="weather-info">
-      <view class="location">
-        <image src="/image/首页-背景.png" class="location-icon" mode="aspectFit"></image>
-        <text class="city">{{weatherData.location}}</text>
-      </view>
-      <view class="weather-detail">
-        <text class="temp">{{weatherData.temp}}°C</text>
-        <text class="condition">{{weatherData.condition}}</text>
-      </view>
-      <view class="weather-stats">
-        <text class="stat">PM {{weatherData.pm25}}</text>
-        <text class="stat">UV 最弱</text>
-        <text class="stat">22~26°C</text>
-        <text class="stat">微风</text>
-      </view>
-      
-      <!-- 四个图标放在温度下方 -->
-      <view class="icon-grid">
-        <block wx:for="{{iconsTop}}" wx:key="name">
-          <view class="icon-item" bindtap="navigateTo" data-url="{{item.url}}">
-            <image src="{{item.icon}}" mode="aspectFit"></image>
-            <text>{{item.name}}</text>
-          </view>
-        </block>
-      </view>
+    <image src="/image/图层3.png" mode="widthFix" class="flexible-image" style="width:100%"></image>
+    <!-- 四个图标放在天气信息下方 -->
+    <view class="icon-grid">
+      <block wx:for="{{iconsTop}}" wx:key="name">
+        <view class="icon-item" bindtap="navigateTo" data-url="{{item.url}}">
+          <image src="{{item.icon}}" mode="aspectFit"></image>
+          <text>{{item.name}}</text>
+        </view>
+      </block>
     </view>
   </view>
-
   <!-- 今日穿搭签 -->
-  <view class="outfit-section">
-    <!-- "今日穿搭签"文字图片 -->
-    <image src="/image/今日穿搭签.png" class="outfit-title-image" mode="aspectFit"></image>
-    
-    <view class="outfit-content">
-      <image src="{{outfitRecommend.image}}" mode="aspectFill" class="outfit-image"></image>
+  <view class="outfit-sign">
+    <image src="/image/首页-中部标签.png" mode="widthFix" class="flexible-image" style="width:100%"></image>
+ 
+  <view class="outfit-content">
+    <image src="{{outfitRecommend.image}}" mode="aspectFill" class="outfit-image"></image>
       <view class="outfit-sign-container">
-        <image src="/image/休闲牛仔风.png" class="outfit-sign-image" mode="aspectFit"></image>
+        <image src="/image/首页-今日穿搭签.png" class="outfit-sign-image" mode="aspectFit"></image>
       </view>
     </view>
   </view>
