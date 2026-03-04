@@ -2,9 +2,12 @@
 <view class="container">
   <!-- 背景图片 -->
   <image src="/image/首页-背景.png" class="background" mode="aspectFill"></image>
+  
+
   <!-- 顶部用户和天气信息 -->
   <view class="header">
     <image src="/image/图层3.png" mode="widthFix" class="flexible-image" style="width:100%"></image>
+
     <!-- 四个图标放在天气信息下方 -->
     <view class="icon-grid">
       <block wx:for="{{iconsTop}}" wx:key="name">
@@ -15,14 +18,17 @@
       </block>
     </view>
   </view>
+
+
   <!-- 今日穿搭签 -->
-  <view class="outfit-sign">
-    <image src="/image/首页-中部标签.png" mode="widthFix" class="flexible-image" style="width:100%"></image>
- 
-  <view class="outfit-content">
-    <image src="{{outfitRecommend.image}}" mode="aspectFill" class="outfit-image"></image>
+  <view class="outfit-section">
+    <image src="../../image/首页-中部标签.png" mode="aspectFit" class="outfit-title-image"></image>
+    
+    
+    <view class="outfit-content">
+      <image src="{{outfitRecommend.image}}" mode="aspectFill" class="outfit-image"></image>
       <view class="outfit-sign-container">
-        <image src="/image/首页-今日穿搭签.png" class="outfit-sign-image" mode="aspectFit"></image>
+        <image src="../../image/首页-今日穿搭签.png" mode="aspectFit" class="outfit-sign-image"></image>
       </view>
     </view>
   </view>

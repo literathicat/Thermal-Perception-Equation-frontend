@@ -25,6 +25,7 @@ Page({
       }
     ],
     outfitRecommend: {
+      image: '../../image/首页-背景.png',
       sign: '22℃微风→休闲牛仔风，幸运色：雾霾蓝',
       desc: '今日推荐: 轻薄外套搭配T恤，适合当前温度',
       share_url: '#'
@@ -77,6 +78,7 @@ Page({
                 wind_speed: mockWeather.wind_speed
               },
               outfitRecommend: {
+                image: '../../image/首页-背景.png',
                 sign: mockOutfitSign.sign,
                 desc: '今日推荐: 轻薄外套搭配T恤，适合当前温度',
                 share_url: mockOutfitSign.share_url
