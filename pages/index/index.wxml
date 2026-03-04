@@ -1,27 +1,55 @@
-<!--index.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    <view class="userinfo">
-      <block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
-        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
-        </button>
-        <view class="nickname-wrapper">
-          <text class="nickname-label">昵称</text>
-          <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
-        </view>
-      </block>
-      <block wx:elif="{{!hasUserInfo}}">
-        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-        <view wx:else> 请使用2.10.4及以上版本基础库 </view>
-      </block>
-      <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      </block>
+<!--pages/index/index.wxml-->
+<view class="container">
+  <!-- 背景图片 -->
+  <image src="/image/首页-背景.png" class="background" mode="aspectFill"></image>
+  
+  <!-- 顶部用户和天气信息 -->
+  <view class="header">
+    <view class="user-info">
+      <image src="{{userInfo.avatarUrl}}" mode="aspectFill" class="user-avatar"></image>
     </view>
-    <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
+    
+    <view class="weather-info">
+      <view class="location">
+        <image src="/image/首页-背景.png" class="location-icon" mode="aspectFit"></image>
+        <text class="city">{{weatherData.location}}</text>
+      </view>
+      <view class="weather-detail">
+        <text class="temp">{{weatherData.temp}}°C</text>
+        <text class="condition">{{weatherData.condition}}</text>
+      </view>
+      <view class="weather-stats">
+        <text class="stat">PM {{weatherData.pm25}}</text>
+        <text class="stat">UV 最弱</text>
+        <text class="stat">22~26°C</text>
+        <text class="stat">微风</text>
+      </view>
+      
+      <!-- 四个图标放在温度下方 -->
+      <view class="icon-grid">
+        <block wx:for="{{iconsTop}}" wx:key="name">
+          <view class="icon-item" bindtap="navigateTo" data-url="{{item.url}}">
+            <image src="{{item.icon}}" mode="aspectFit"></image>
+            <text>{{item.name}}</text>
+          </view>
+        </block>
+      </view>
     </view>
   </view>
-</scroll-view>
+
+  <!-- 今日穿搭签 -->
+  <view class="outfit-section">
+    <!-- "今日穿搭签"文字图片 -->
+    <image src="/image/今日穿搭签.png" class="outfit-title-image" mode="aspectFit"></image>
+    
+    <view class="outfit-content">
+      <image src="{{outfitRecommend.image}}" mode="aspectFill" class="outfit-image"></image>
+      <view class="outfit-sign-container">
+        <image src="/image/休闲牛仔风.png" class="outfit-sign-image" mode="aspectFit"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部导航栏图片 -->
+  <image src="/image/首页-底部悬浮导航栏.png" class="bottom-nav-image" mode="aspectFit"></image>
+</view>

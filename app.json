@@ -1,7 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/myclothes/myclothes",
+    "pages/generateoutfits/generateoutfits",
+    "pages/knowledgebase/knowledgebase",
+    "pages/search/search"
   ],
   "window": {
     "navigationBarTextStyle": "black",
