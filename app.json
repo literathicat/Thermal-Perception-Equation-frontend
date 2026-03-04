@@ -5,7 +5,9 @@
     "pages/myclothes/myclothes",
     "pages/generateoutfits/generateoutfits",
     "pages/knowledgebase/knowledgebase",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/upload/upload",
+    "pages/editclothes/editclothes"
   ],
   "window": {
     "navigationBarTextStyle": "black",

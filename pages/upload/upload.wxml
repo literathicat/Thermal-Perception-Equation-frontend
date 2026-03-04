@@ -1,0 +1,23 @@
+<!--pages/upload/upload.wxml-->
+
+<view style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: url('../../image/upload-背景.png') no-repeat center/cover;"></view>
+
+<image src="../../image/返回.png" mode="aspectFit" style="position: absolute; left: 30rpx; top: 20rpx; width: 70rpx; height: 70rpx;"></image>
+
+<view style="display: flex; justify-content: space-between; margin-top: 20rpx; padding: 0 50rpx;">
+  <image src="../../image/单张上传.png" mode="aspectFit" style="width: 300rpx; height: 300rpx;"></image>
+  <image src="../../image/批量上传.png" mode="aspectFit" style="width: 300rpx; height: 300rpx;"></image>
+  </view>
+  <image src="../../image/保存.png" mode="aspectFit" style="position: absolute; right: 50rpx; top: 200rpx; width: 150rpx; height: 150rpx;" bindtap="navigateToEditClothes"></image>
+  <view style="display: flex; flex-direction: column; position: fixed; bottom: 330rpx; left: 0; right: 0; padding: 0 50rpx;">
+    <view style="display: flex; justify-content: space-around; margin-bottom: 30rpx;">
+      <image src="../../image/标签1.png" mode="aspectFit" style="position: absolute; left: 50rpx; top: 400rpx; width: 170rpx; height: 170rpx;"></image>
+      <image src="../../image/标签2.png" mode="aspectFit" style="position: absolute; right: 50rpx; top: 400rpx; width: 200rpx; height: 200rpx;"></image>
+    </view>
+  
+    <view style="display: flex; justify-content: space-around;">
+      <image src="../../image/标签3.png" mode="aspectFit" style="position: absolute; left: 50rpx; top: 600rpx; width: 200rpx; height: 200rpx;"></image>
+      <image src="../../image/标签4.png" mode="aspectFit" style="position: absolute; left: 50%; transform: translateX(-50%); top: 600rpx; width: 200rpx; height: 200rpx;"></image>
+      <image src="../../image/标签5.png" mode="aspectFit" style="position: absolute; right: 50rpx; top: 600rpx; width: 200rpx; height: 200rpx;"></image>
+    </view>
+</view>
