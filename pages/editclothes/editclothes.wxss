@@ -1,1 +1,32 @@
 /* pages/editclothes/editclothes.wxss */
+
+/* 标签面板遮罩层 */
+.tag-panel-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 标签面板容器 */
+.tag-panel-container {
+  position: relative;
+  z-index: 1001;
+}
+
+/* 标签面板背景图片 */
+.tag-panel-bg {
+  display: block;
+}
+
+/* 标签项 */
+.tag-item {
+  position: absolute;
+  z-index: 1002;
+}

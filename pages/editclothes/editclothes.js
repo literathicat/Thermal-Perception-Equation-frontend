@@ -5,7 +5,59 @@ Page({
    * 页面的初始数据
    */
   data: {
+    // 控制标签面板显示
+    showTagPanel: false,
+    // 标签图片位置和尺寸数据
+    tag1: {
+      left: 50,
+      top: 50,
+      width: 160,
+      height: 160
+    },
+    tag2: {
+      left: 230,
+      top: -10,
+      width: 280,
+      height: 280
+    },
+    tag4: {
+      left: 50,
+      top: 100,
+      width: 220,
+      height: 220
+    },
+    tag5: {
+      left: 50,
+      top: 200,
+      width: 180,
+      height: 180
+    },
+    // 添加按钮位置和尺寸数据（右下角）
+    addTag: {
+      left: 500,
+      top: 450,
+      width: 80,
+      height: 80
+    },
+    // 标签面板背景尺寸
+    tagPanelBgWidth: 600,
+    tagPanelBgHeight: 600
+  },
 
+  /**
+   * 切换标签面板显示/隐藏
+   */
+  toggleTagPanel() {
+    this.setData({
+      showTagPanel: !this.data.showTagPanel
+    });
+  },
+
+  /**
+   * 阻止事件冒泡（空函数）
+   */
+  stopPropagation() {
+    // 空函数，仅用于阻止事件冒泡
   },
 
   /**
