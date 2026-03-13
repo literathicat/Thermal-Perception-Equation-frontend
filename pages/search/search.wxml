@@ -1,2 +1,9 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="container">
+  <text>pages/search/search.wxml</text>
+</view>
+
+<!-- 全局底部悬浮导航栏图片 -->
+<view class="global-bottom-nav" bindtap="goToMyFavorite">
+  <image src="/image/首页-底部悬浮导航栏.png" class="global-bottom-nav-image" mode="widthFix"></image>
+</view>

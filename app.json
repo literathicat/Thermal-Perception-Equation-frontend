@@ -7,7 +7,8 @@
     "pages/knowledgebase/knowledgebase",
     "pages/search/search",
     "pages/upload/upload",
-    "pages/editclothes/editclothes"
+    "pages/editclothes/editclothes",
+    "pages/myfavorite/myfavorite"
   ],
   "window": {
     "navigationBarTextStyle": "black",

@@ -16,32 +16,21 @@
   z-index: 0;
 }
 
-.outfit-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  margin-bottom: 50rpx;
-}
-
-.outfit-title-image {
-  width: 100%;
-  height: 36rpx;
-  margin-bottom: 10rpx;
-  border: 2rpx solid red;
-}
-
-.outfit-sign-image {
-  width: 80%;
-  height: 40rpx;
-  border: 2rpx solid blue;
-}
+/* 删除重复定义，保留后续的精确定义 */
 
 .header {
   position: relative;
   z-index: 1;
   padding: 20rpx 20rpx 10rpx;
-  margin-bottom: 50rpx;
+  margin-bottom: 20rpx;
+}
+
+.dress-checkin {
+  position: relative;
+  z-index: 1;
+  margin: 20rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
 }
 
 .user-info {

@@ -62,5 +62,19 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+  goToMyFavorite() {
+    wx.navigateTo({
+      url: '../myfavorite/myfavorite',
+      fail: (err) => {
+        console.error('跳转到我的收藏失败:', err);
+        wx.showToast({
+          title: '跳转失败',
+          icon: 'none',
+          duration: 2000
+        });
+      }
+    });
   }
 })

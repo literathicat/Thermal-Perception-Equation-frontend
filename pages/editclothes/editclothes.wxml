@@ -1,23 +1,30 @@
 <!--pages/editclothes/editclothes.wxml-->
-<view style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: url('../../image/editclothes-背景.png') no-repeat center/cover;"></view>
-<image src="../../image/编辑信息.png" mode="aspectFit" style="position: absolute; width: 320rpx; height: 200rpx; bottom: 100rpx; left: 70rpx;"></image>
-<image src="../../image/删除衣物.png" mode="aspectFit" style="position: absolute; width: 200rpx; height: 200rpx; bottom: 100rpx; right: 70rpx;"></image>
-<image src="../../image/拓展-标签.png" mode="aspectFit" style="position: absolute; width: 70rpx; height: 200rpx; bottom: 230rpx; right: 130rpx;" bindtap="toggleTagPanel"></image>
+<view class="container">
+  <view style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: url('../../image/editclothes-背景.png') no-repeat center/cover;"></view>
+  <image src="../../image/编辑信息.png" mode="aspectFit" style="position: absolute; width: 320rpx; height: 200rpx; bottom: 100rpx; left: 70rpx;"></image>
+  <image src="../../image/删除衣物.png" mode="aspectFit" style="position: absolute; width: 200rpx; height: 200rpx; bottom: 100rpx; right: 70rpx;"></image>
+  <image src="../../image/拓展-标签.png" mode="aspectFit" style="position: absolute; width: 70rpx; height: 200rpx; bottom: 230rpx; right: 130rpx;" bindtap="toggleTagPanel"></image>
 
-<!-- 标签面板 -->
-<view wx:if="{{showTagPanel}}" class="tag-panel-mask" bindtap="toggleTagPanel">
-  <view class="tag-panel-container" catchtap="stopPropagation">
-    <!-- 背景图片 -->
-    <image src="../../image/选项框-标签.png" mode="aspectFit" class="tag-panel-bg" style="width: {{tagPanelBgWidth}}rpx; height: {{tagPanelBgHeight}}rpx;"></image>
-    <!-- 标签1 -->
-    <image src="../../image/标签1.png" mode="aspectFit" class="tag-item" style="left: {{tag1.left}}rpx; top: {{tag1.top}}rpx; width: {{tag1.width}}rpx; height: {{tag1.height}}rpx;"></image>
-    <!-- 标签2 -->
-    <image src="../../image/标签2.png" mode="aspectFit" class="tag-item" style="left: {{tag2.left}}rpx; top: {{tag2.top}}rpx; width: {{tag2.width}}rpx; height: {{tag2.height}}rpx;"></image>
-    <!-- 标签4 -->
-    <image src="../../image/标签4.png" mode="aspectFit" class="tag-item" style="left: {{tag4.left}}rpx; top: {{tag4.top}}rpx; width: {{tag4.width}}rpx; height: {{tag4.height}}rpx;"></image>
-    <!-- 标签5 -->
-    <image src="../../image/标签5.png" mode="aspectFit" class="tag-item" style="left: {{tag5.left}}rpx; top: {{tag5.top}}rpx; width: {{tag5.width}}rpx; height: {{tag5.height}}rpx;"></image>
-    <!-- 添加按钮（右下角） -->
-    <image src="../../image/添加.png" mode="aspectFit" class="tag-item" style="left: {{addTag.left}}rpx; top: {{addTag.top}}rpx; width: {{addTag.width}}rpx; height: {{addTag.height}}rpx;"></image>
+  <!-- 标签面板 -->
+  <view wx:if="{{showTagPanel}}" class="tag-panel-mask" bindtap="toggleTagPanel">
+    <view class="tag-panel-container" catchtap="stopPropagation">
+      <!-- 背景图片 -->
+      <image src="../../image/选项框-标签.png" mode="aspectFit" class="tag-panel-bg" style="width: {{tagPanelBgWidth}}rpx; height: {{tagPanelBgHeight}}rpx;"></image>
+      <!-- 标签1 -->
+      <image src="../../image/标签1.png" mode="aspectFit" class="tag-item" style="left: {{tag1.left}}rpx; top: {{tag1.top}}rpx; width: {{tag1.width}}rpx; height: {{tag1.height}}rpx;"></image>
+      <!-- 标签2 -->
+      <image src="../../image/标签2.png" mode="aspectFit" class="tag-item" style="left: {{tag2.left}}rpx; top: {{tag2.top}}rpx; width: {{tag2.width}}rpx; height: {{tag2.height}}rpx;"></image>
+      <!-- 标签4 -->
+      <image src="../../image/标签4.png" mode="aspectFit" class="tag-item" style="left: {{tag4.left}}rpx; top: {{tag4.top}}rpx; width: {{tag4.width}}rpx; height: {{tag4.height}}rpx;"></image>
+      <!-- 标签5 -->
+      <image src="../../image/标签5.png" mode="aspectFit" class="tag-item" style="left: {{tag5.left}}rpx; top: {{tag5.top}}rpx; width: {{tag5.width}}rpx; height: {{tag5.height}}rpx;"></image>
+      <!-- 添加按钮（右下角） -->
+      <image src="../../image/添加.png" mode="aspectFit" class="tag-item" style="left: {{addTag.left}}rpx; top: {{addTag.top}}rpx; width: {{addTag.width}}rpx; height: {{addTag.height}}rpx;"></image>
+    </view>
   </view>
+</view>
+
+<!-- 全局底部悬浮导航栏图片 -->
+<view class="global-bottom-nav" bindtap="goToMyFavorite">
+  <image src="/image/首页-底部悬浮导航栏.png" class="global-bottom-nav-image" mode="widthFix"></image>
 </view>

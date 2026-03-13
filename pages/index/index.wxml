@@ -3,10 +3,9 @@
   <!-- 背景图片 -->
   <image src="/image/首页-背景.png" class="background" mode="aspectFill"></image>
   
-
   <!-- 顶部用户和天气信息 -->
   <view class="header">
-    <image src="/image/图层3.png" mode="widthFix" class="flexible-image" style="width:100%"></image>
+    <image src="/image/图层3.png" mode="widthFix" style="width:100%"></image>
 
     <!-- 四个图标放在天气信息下方 -->
     <view class="icon-grid">
@@ -18,21 +17,12 @@
       </block>
     </view>
   </view>
+  
+  <!-- 今日穿搭签到模块 -->
+  <image src="/image/今日穿搭签.png" mode="aspectFit" class="dress-image"></image>
+</view>
 
-
-  <!-- 今日穿搭签 -->
-  <view class="outfit-section">
-    <image src="../../image/首页-中部标签.png" mode="aspectFit" class="outfit-title-image"></image>
-    
-    
-    <view class="outfit-content">
-      <image src="{{outfitRecommend.image}}" mode="aspectFill" class="outfit-image"></image>
-      <view class="outfit-sign-container">
-        <image src="../../image/首页-今日穿搭签.png" mode="aspectFit" class="outfit-sign-image"></image>
-      </view>
-    </view>
-  </view>
-
-  <!-- 底部导航栏图片 -->
-  <image src="/image/首页-底部悬浮导航栏.png" class="bottom-nav-image" mode="aspectFit"></image>
+<!-- 全局底部悬浮导航栏图片 -->
+<view class="global-bottom-nav" bindtap="goToMyFavorite">
+  <image src="/image/首页-底部悬浮导航栏.png" class="global-bottom-nav-image" mode="widthFix"></image>
 </view>

@@ -1,7 +1,5 @@
-<!--pages/generateoutfits/generateoutfits.wxml-->
-<view class="container">
-  <text>pages/generateoutfits/generateoutfits.wxml</text>
-</view>
+<!--pages/myfavorite/myfavorite.wxml-->
+<text>pages/myfavorite/myfavorite.wxml</text>
 
 <!-- 全局底部悬浮导航栏图片 -->
 <view class="global-bottom-nav" bindtap="goToMyFavorite">

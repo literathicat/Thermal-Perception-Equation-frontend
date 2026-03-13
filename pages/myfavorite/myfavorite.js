@@ -1,4 +1,4 @@
-// pages/upload/upload.js
+// pages/myfavorite/myfavorite.js
 Page({
 
   /**
@@ -6,15 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  /**
-   * 跳转到编辑衣物页面
-   */
-  navigateToEditClothes() {
-    wx.navigateTo({
-      url: '../editclothes/editclothes'
-    });
   },
 
   /**
@@ -74,16 +65,15 @@ Page({
   },
 
   goToMyFavorite() {
-    wx.navigateTo({
-      url: '../myfavorite/myfavorite',
-      fail: (err) => {
-        console.error('跳转到我的收藏失败:', err);
-        wx.showToast({
-          title: '跳转失败',
-          icon: 'none',
-          duration: 2000
-        });
-      }
+    // 如果已经在myfavorite页面，可以不做跳转，或者跳转到自身（可选）
+    // wx.navigateTo({
+    //   url: '../myfavorite/myfavorite',
+    // });
+    // 这里我们选择不做任何操作，或者可以给个提示
+    wx.showToast({
+      title: '已经在我的收藏',
+      icon: 'none',
+      duration: 1000
     });
   }
 })
