@@ -1,14 +1,23 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/myclothes/myclothes",
+    "pages/generateoutfits/generateoutfits",
+    "pages/knowledgebase/knowledgebase",
+    "pages/search/search",
+    "pages/upload/upload",
+    "pages/editclothes/editclothes",
+    "pages/myfavorite/myfavorite"
     "pages/outfit/outfit"
   ],
   "window": {
-    "navigationBarTitleText": "生成穿搭",
-    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",
-    "backgroundColor": "#f4fbff",
-    "backgroundTextStyle": "light"
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
 }

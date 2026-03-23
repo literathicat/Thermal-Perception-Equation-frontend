@@ -1,0 +1,194 @@
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  }
+
+  .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* 删除重复定义，保留后续的精确定义 */
+
+.header {
+  position: relative;
+  z-index: 1;
+  padding: 20rpx 20rpx 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.dress-checkin {
+  position: relative;
+  z-index: 1;
+  margin: 20rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+
+.image-style {
+  width: 100%;
+  height: auto;
+  object-fit: aspect-fit;
+}
+.weather-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location-icon {
+  width: 90rpx;
+  height: 90rpx;
+  margin-right: 8rpx;
+}
+
+.city {
+  font-size: 28rpx;
+  color: #1890ff;
+  font-weight: bold;
+}
+
+.weather-detail {
+  display: flex;
+  align-items: center;
+  margin: 10rpx 0;
+}
+
+.temp {
+  font-size: 56rpx;
+  font-weight: bold;
+  color: #ffa500;
+  margin-right: 12rpx;
+}
+
+.condition {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.weather-stats {
+  display: flex;
+  gap: 12rpx;
+  font-size: 22rpx;
+  color: #666;
+  margin: 10rpx 0;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  padding: 2rpx 10rpx;
+  background-color: #e6f7ff;
+  border-radius: 20rpx;
+}
+
+.icon-grid {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  margin-top: 20rpx;
+  margin-bottom: 0;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 0;
+}
+
+.icon-item image {
+  width: 160rpx;
+  height: 160rpx;
+  margin-bottom: 6rpx;
+  padding-left:8rpx;
+  padding-right:8rpx;
+}
+
+.icon-item text {
+  font-size: 22rpx;
+  color: #333;
+}
+
+.outfit-section {
+  position: relative;
+  z-index: 1;
+  margin: 20rpx 0;
+  padding: 0 20rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.outfit-title-image {
+  width: 100%;
+  height: 36rpx;
+  margin-bottom: 10rpx;
+  border: 2rpx solid red;
+}
+
+.outfit-content {
+  position: relative;
+}
+
+.outfit-image {
+  width: 100%;
+  height: 380rpx;
+  border-radius: 12rpx;
+  margin-bottom: 10rpx;
+}
+
+.outfit-sign-container {
+  position: relative;
+  width: 100%;
+  height: 40rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.outfit-sign-image {
+  width: 80%;
+  height: 100%;
+}
+
+.bottom-nav-image {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+/* 确保没有顶部边距 */
+.page-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}

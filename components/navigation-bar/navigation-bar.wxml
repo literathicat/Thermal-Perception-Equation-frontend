@@ -1,0 +1,32 @@
+<!--components/navigation-bar/navigation-bar.wxml-->
+<view class="nav-container">
+  <!-- 背景图片 -->
+  <image src="/image/首页-底部悬浮导航栏.png" class="nav-background" mode="widthFix"></image>
+  
+  <!-- 四个导航按钮 -->
+  <view class="nav-buttons">
+    <!-- 首页按钮 -->
+    <view class="nav-button {{currentPage === 'index' ? 'active' : ''}}" bindtap="navigateToPage" data-page="index">
+      <image src="/image/首页-我的衣柜按钮.png" class="nav-icon" mode="widthFix"></image>
+      <text class="nav-text">首页</text>
+    </view>
+    
+    <!-- 我的衣柜按钮 -->
+    <view class="nav-button {{currentPage === 'myclothes' ? 'active' : ''}}" bindtap="navigateToPage" data-page="myclothes">
+      <image src="/image/首页-知识库按钮.png" class="nav-icon" mode="widthFix"></image>
+      <text class="nav-text">衣柜</text>
+    </view>
+    
+    <!-- 生成穿搭按钮 -->
+    <view class="nav-button {{currentPage === 'generateoutfits' ? 'active' : ''}}" bindtap="navigateToPage" data-page="generateoutfits">
+      <image src="/image/首页-生成穿搭按钮.png" class="nav-icon" mode="widthFix"></image>
+      <text class="nav-text">穿搭</text>
+    </view>
+    
+    <!-- 知识库按钮 -->
+    <view class="nav-button {{currentPage === 'knowledgebase' ? 'active' : ''}}" bindtap="navigateToPage" data-page="knowledgebase">
+      <image src="/image/首页-搜索按钮.png" class="nav-icon" mode="widthFix"></image>
+      <text class="nav-text">知识库</text>
+    </view>
+  </view>
+</view>

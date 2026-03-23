@@ -1,43 +1,41 @@
 {
-  "description": "穿搭生成小程序",
+  "compileType": "miniprogram",
+  "libVersion": "trial",
   "packOptions": {
     "ignore": [],
     "include": []
   },
   "setting": {
-    "bundle": false,
-    "userConfirmedBundleSwitch": false,
-    "urlCheck": false,
-    "minified": false,
-    "enhance": true,
+    "coverView": true,
     "es6": true,
     "postcss": true,
-    "compileHotReLoad": true,
-    "compileWorklet": false,
-    "uglifyFileName": false,
-    "uploadWithSourceMap": true,
-    "packNpmManually": false,
+    "minified": true,
+    "enhance": true,
+    "showShadowRootInWxmlPanel": true,
     "packNpmRelationList": [],
-    "minifyWXSS": true,
-    "minifyWXML": true,
-    "localPlugins": false,
-    "disableUseStrict": false,
-    "useCompilerPlugins": false,
-    "condition": false,
-    "swc": false,
-    "disableSWC": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "compileWorklet": false,
+    "uglifyFileName": false,
+    "uploadWithSourceMap": true,
+    "packNpmManually": false,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "localPlugins": false,
+    "condition": false,
+    "swc": false,
+    "disableSWC": true,
+    "disableUseStrict": false,
+    "useCompilerPlugins": false
   },
-  "compileType": "miniprogram",
-  "libVersion": "3.4.0",
-  "appid": "wx8e4f7532e9dc0256",
-  "projectname": "outfit-generator",
-  "simulatorType": "wechat",
   "condition": {},
-  "simulatorPluginLibVersion": {},
-  "editorSetting": {}
+  "editorSetting": {
+    "tabIndent": "auto",
+    "tabSize": 2
+  },
+  "appid": "wx9d5fd4c2006c5685",
+  "simulatorPluginLibVersion": {}
 }
