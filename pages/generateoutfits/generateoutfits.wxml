@@ -1,9 +1,21 @@
-<!--pages/generateoutfits/generateoutfits.wxml-->
-<view class="container">
-  <text>pages/generateoutfits/generateoutfits.wxml</text>
-</view>
+<view class="page">
+  <view class="phone">
+    <image class="screen" mode="widthFix" src="{{currentImage}}"></image>
 
-<!-- 全局底部悬浮导航栏图片 -->
-<view class="global-bottom-nav" bindtap="goToMyFavorite">
-  <image src="/image/首页-底部悬浮导航栏.png" class="global-bottom-nav-image" mode="widthFix"></image>
+    <view class="hotspots">
+      <block wx:for="{{hotspots}}" wx:key="index">
+        <view
+          class="hotspot"
+          style="left: {{item.left}}%; top: {{item.top}}%; width: {{item.width}}%; height: {{item.height}}%;"
+          data-to="{{item.to}}"
+          bindtap="goToPage"
+        ></view>
+      </block>
+    </view>
+  </view>
+
+  <view class="toolbar">
+    <button class="home-btn" bindtap="goHome">回到第1页</button>
+    <text class="page-text">当前：第{{currentPage}}页 / 共7页</text>
+  </view>
 </view>

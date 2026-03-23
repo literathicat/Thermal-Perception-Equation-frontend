@@ -1,0 +1,18 @@
+{
+<<<<<<< HEAD
+  "desc": "默认允许所有页面被索引",
+  "rules": [
+    {
+      "action": "allow",
+      "page": "*"
+    }
+  ]
+}
+=======
+  "desc": "关于本文件的更多信息，请参考文档 https://developers.weixin.qq.com/miniprogram/dev/framework/sitemap.html",
+  "rules": [{
+  "action": "allow",
+  "page": "*"
+  }]
+}
+>>>>>>> c92e036831ae1902194f1fb093cea82315456d42

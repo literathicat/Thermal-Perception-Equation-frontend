@@ -17,10 +17,11 @@
       </block>
     </view>
   </view>
-  
-  <!-- 今日穿搭签到模块 -->
-  <image src="/image/今日穿搭签.png" mode="aspectFit" class="dress-image"></image>
 </view>
+ <image src="../../image/首页-中部标签.png" mode="aspectFit" style="position: absolute; right: 42%; top: 150rpx; width: 400rpx; height: 500rpx;"></image>
+  
+  <image src="../../image/首页-今日穿搭签.png" mode="aspectFit" style="position: absolute; right: -23%; top: 470rpx; width: 1100rpx; height: 800rpx;"></image>
+
 
 <!-- 全局底部悬浮导航栏图片 -->
 <view class="global-bottom-nav" bindtap="goToMyFavorite">
