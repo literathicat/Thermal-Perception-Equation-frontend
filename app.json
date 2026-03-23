@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/outfit/outfit"
+  ],
+  "window": {
+    "navigationBarTitleText": "生成穿搭",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f4fbff",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

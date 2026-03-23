@@ -1,0 +1,21 @@
+<view class="page">
+  <view class="phone">
+    <image class="screen" mode="widthFix" src="{{currentImage}}"></image>
+
+    <view class="hotspots">
+      <block wx:for="{{hotspots}}" wx:key="index">
+        <view
+          class="hotspot"
+          style="left: {{item.left}}%; top: {{item.top}}%; width: {{item.width}}%; height: {{item.height}}%;"
+          data-to="{{item.to}}"
+          bindtap="goToPage"
+        ></view>
+      </block>
+    </view>
+  </view>
+
+  <view class="toolbar">
+    <button class="home-btn" bindtap="goHome">回到第1页</button>
+    <text class="page-text">当前：第{{currentPage}}页 / 共7页</text>
+  </view>
+</view>
